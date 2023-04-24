@@ -1,0 +1,68 @@
+<div class="w-screen h-screen bg-[#fafafa] relative sm:bg-gray-50">
+  <div class="absolute w-full h-full hidden sm:block">
+    <img
+      loading="lazy"
+      class="absolute lg:w-96 w-60 left-0 bottom-0"
+      src="/assets/svg/login-bg-left.svg"
+      alt="bg left"
+    />
+    <img
+      loading="lazy"
+      class="absolute lg:w-96 w-60 right-0 bottom-0"
+      src="/assets/svg/login-bg-rigth.svg"
+      alt="bg rigth"
+    />
+  </div>
+  <div class="relative w-full sm:w-7/12 md:w-6/12 lg:w-4/12 m-auto">
+    <header class="pt-6 pb-2 flex justify-center">
+      <img
+        loading="lazy"
+        class="w-56"
+        src="/assets/logo/logo-gradient-blue-trello.png"
+        alt="Logo"
+      />
+    </header>
+    <div class="bg-white rounded shadow-none sm:shadow-lg py-4 px-6 md:px-10">
+      <h1 class="text-center font-semibold pt-4 pb-8 text-grey-600">
+        Login to Trello
+      </h1>
+      <form novalidate class="space-y-4">
+        <div class="relative">
+          <input
+            type="text"
+            class="w-full rounded bg-gray-100 border-gray-300 border-2"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="relative">
+          <input
+            type="password"
+            class="w-full rounded bg-gray-100 border-gray-300 border-2"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="">
+          <app-button [type]="'submit'" [color]="'success'">Log in</app-button>
+        </div>
+      </form>
+    </div>
+    <hr class="my-4 border-b-1 border-r-gray-300" />
+    <div
+      class="flex justify-center items-center space-x-0 space-y-2 md:space-x-2 md:space-y-0 flex-col md:flex-row"
+    >
+      <a href="" routerLink="/forgot-password">Can't log in?</a>
+      <span class="text-gray-500 hidden md:block">•</span>
+      <a href="" routerLink="/register" class="text-blue-600 font-light"
+        >Sign up for an account</a
+      >
+    </div>
+  </div>
+  <hr class="mt-10 border-b-1 border-r-gray-300" />
+  <div class="flex justify-center space-y-4">
+    <img
+      class="w-56"
+      src="/assets/logo/horizontal-logo-gradient-blue-atlassian.png"
+      alt=""
+    />
+  </div>
+</div>

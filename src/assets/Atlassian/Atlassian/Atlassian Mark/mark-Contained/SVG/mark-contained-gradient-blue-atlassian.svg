@@ -1,0 +1,17 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-contained-gradient-blue-atlassian">
+<path id="Vector" d="M32 0H0V32H32V0Z" fill="#EBECF0"/>
+<g id="Group">
+<g id="Group_2">
+<path id="Vector_2" d="M12.76 14.2C12.52 13.96 12.16 13.96 12 14.28L8.12002 22.04C7.96002 22.36 8.20002 22.72 8.52002 22.72H13.92C14.08 22.72 14.24 22.64 14.32 22.48C15.52 20.08 14.84 16.4 12.76 14.2Z" fill="url(#paint0_linear)"/>
+<path id="Vector_3" d="M15.6402 7.16C13.4802 10.6 13.6002 14.4 15.0402 17.28C16.4802 20.16 17.5602 22.32 17.6402 22.48C17.7202 22.64 17.8802 22.72 18.0402 22.72H23.4402C23.8002 22.72 24.0002 22.36 23.8402 22.04C23.8402 22.04 16.5602 7.47999 16.4002 7.11999C16.2402 6.83999 15.8402 6.8 15.6402 7.16Z" fill="#2684FF"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="14.9056" y1="15.4078" x2="10.8081" y2="22.505" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0052CC"/>
+<stop offset="0.9228" stop-color="#2684FF"/>
+</linearGradient>
+</defs>
+</svg>
