@@ -1,0 +1,108 @@
+<app-navbar></app-navbar>
+<div class="container flex mx-auto mt-10">
+    <aside class="w-1/5 mr-4">
+        <ul class="flex flex-col font-medium text-gray-700">
+            <li>
+                <a href="" class="block bg-sky-100 rounded py-1 px-3 text-sky-700">
+                    <fa-icon [icon]="faTrello"></fa-icon>
+                    Boards
+                </a>
+            </li>
+            <li >
+                <a href="" class="block py-1 px-3">
+
+                    <fa-icon [icon]="faBox"></fa-icon>
+                    Templates
+                </a>
+            </li>
+            <li >
+                <a href="" class="block py-1 px-3">
+
+                    <fa-icon [icon]="faHouse"></fa-icon>
+                    Home
+                </a>
+            </li>
+        </ul>
+        <cdk-accordion>
+            <cdk-accordion-item  #accordionMenu="cdkAccordionItem">
+                <button class="w-full py-1 px-2 flex justify-between items-center" type="button" (click)="accordionMenu.toggle()">My workspaces
+                    <fa-icon [icon]="accordionMenu.expanded ? faAngleUp : faAngleDown"></fa-icon>
+                </button>
+                <div [style.display]="accordionMenu.expanded ? '' : 'none'">
+                    <ul class="ml-2 flex flex-col text-sm text-gray-700">
+                        <li>
+                            <a href="" class="block py-1 px-3">
+                                <fa-icon [icon]="faTrello"></fa-icon> Boards
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="block py-1 px-3">
+                                <fa-icon [icon]="faHeart"></fa-icon> Highlights
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="block py-1 px-3">
+                                <fa-icon [icon]="faBorderAll"></fa-icon> Views
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="block py-1 px-3">
+                                <fa-icon [icon]="faUsers"></fa-icon> Members
+                            </a>
+                        </li>
+
+                        
+                        <li>
+                            <a href="" class="block py-1 px-3">
+                                <fa-icon [icon]="faGear"></fa-icon> Settings
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </cdk-accordion-item>
+        </cdk-accordion>
+
+        <cdk-accordion>
+            <cdk-accordion-item #accordionItem="cdkAccordionItem" *ngFor="let item of items">
+                <button class="w-full py-1 px-2 flex justify-between items-center" type="button" (click)="accordionItem.toggle()">{{item.label}} 
+                    <fa-icon [icon]="accordionItem.expanded ? faAngleUp : faAngleDown"></fa-icon>
+                </button>
+                <div [style.display]="accordionItem.expanded ? '' : 'none'">
+                    <ul class="flex flex-col text-sm text-gray-700">
+                        <li *ngFor="let subItem of item.items" >
+                            <a class="block py-1 px-3">
+                                {{subItem.label}}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </cdk-accordion-item>
+        </cdk-accordion>
+    </aside>
+    <section class="w-full">
+        <div class="mb-4 space-x-2 font-bold text-lg">
+            <h3> <fa-icon [icon]="faClock"></fa-icon> Recently viewed</h3>
+        </div>
+        <div class="grid grid-cols-4 gap-4">
+            <div class="w-full bg-primary-800 rounded sm:shadow-lg py-2 px-4 text-white h-24 font-bold">
+                <h4 class="text-bold">Board 1</h4>
+            </div>
+            <div class="w-full bg-amber-700 rounded sm:shadow-lg py-2 px-4 text-white h-24 font-bold">
+                <h4 class="text-bold">Board 1</h4>
+            </div>
+            <div class="w-full bg-indigo-500 rounded sm:shadow-lg py-2 px-4 text-white h-24 font-bold">
+                <h4 class="text-bold">Board 1</h4>
+            </div>
+            <div class="w-full bg-sky-800 rounded sm:shadow-lg py-2 px-4 text-white h-24 font-bold">
+                <h4 class="text-bold">Board 1</h4>
+            </div>
+            <div class="w-full bg-green-800 rounded sm:shadow-lg py-2 px-4 text-white h-24 font-bold">
+                <h4 class="text-bold">Board 1</h4>
+            </div>
+        </div>
+    </section>
+</div>
