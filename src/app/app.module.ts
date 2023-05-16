@@ -17,6 +17,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { BoardComponent } from './pages/board/board.component';
 import { TodoDialogComponent } from './components/todo-dialog/todo-dialog.component';
 import { ScrollComponent } from './pages/scroll/scroll.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { CdkTableModule } from '@angular/cdk/table';
+import { TableComponent } from './pages/table/table.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,6 +32,7 @@ import { ScrollComponent } from './pages/scroll/scroll.component';
     BoardComponent,
     TodoDialogComponent,
     ScrollComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +43,9 @@ import { ScrollComponent } from './pages/scroll/scroll.component';
     DragDropModule,
     DialogModule,
     HttpClientModule,
+    ScrollingModule,
+    CdkTableModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
